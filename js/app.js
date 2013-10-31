@@ -13,11 +13,11 @@ Array.prototype.pick = function() {
 };
 
 function init() {
-  var h = $(window).height() - 50;
-  var w = $(window).width() - 200;
+  var h = $(window).height() - 250;
+  var w = $(window).width() - 500;
   $('div').each(function(i, el) {
-    $(el).css('top',Math.random()*h);
-    $(el).css('left',Math.random()*w);
+    $(el).css('top',Math.random()*h+100);
+    $(el).css('left',Math.random()*w+100);
   });
 
   (function animloop(){
