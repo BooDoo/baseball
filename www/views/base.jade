@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title=genWord
+		link(rel="stylesheet",type="text/css",href="/css/style.css")
+	body
+		- for (var n = 30; n > 0; n-=1) {
+		div=genWord
+		- }
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+		script(src="/js/app.js")
+		script(src="/lib/inflection.js")
